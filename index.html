@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Texas Ranch Steakhouse · Carnes a la brasa frente al mar · Blanes</title>
+<meta name="description" id="metaDesc" content="Texas Ranch Steakhouse, en el Passeig de s’Abanell de Blanes desde 1999: carnes a la parrilla, parrillada, baby back ribs, Texas nachos, fajitas y hamburguesas caseras, con la playa delante. Tel. 972 03 69 28.">
+<meta name="theme-color" content="#1C1A19">
+<meta property="og:title" content="Texas Ranch Steakhouse · Blanes">
+<meta property="og:description" content="Steakhouse · Est. 1999. Carnes a la brasa, nachos, fajitas y burgers frente a la playa de s’Abanell.">
+<meta property="og:image" content="assets/img/neon.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231C1A19'/%3E%3Cpath d='M32 8l6 14 15 1-11 10 4 15-14-8-14 8 4-15-11-10 15-1z' fill='%23F07C1F'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&family=Zilla+Slab:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ ENTRADA · las puertas del saloon ============ -->
+<div class="saloon" id="saloon">
+  <p class="saloon__sign">Texas Ranch<small>Steakhouse · Est. 1999</small></p>
+  <div class="door door--l" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="door door--r" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <button class="saloon__go" id="saloonGo" type="button"><i class="ph-bold ph-hand-pointing"></i><span data-i18n="intro.enter">Entra al rancho</span></button>
+</div>
+
+<!-- ============ CABECERA ============ -->
+<header class="nav" id="nav">
+  <a class="logo" href="#inicio" aria-label="Texas Ranch Steakhouse, inicio" data-i18n-attr="aria-label:nav.home">
+    <svg class="logo__star" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 4l7 16 17 2-12 12 3 17-15-8-15 8 3-17L8 22l17-2z"/><circle cx="32" cy="31" r="7"/></svg>
+    <span class="logo__t">Texas Ranch<small>Steakhouse · Blanes</small></span>
+  </a>
+  <nav class="nav__links" aria-label="Secciones">
+    <a href="#rancho" data-i18n="nav.rancho">El rancho</a>
+    <a href="#parrillada" data-i18n="nav.parri">Parrillada</a>
+    <a href="#corte" data-i18n="nav.corte">El corte</a>
+    <a href="#carta" data-i18n="nav.carta">Carta</a>
+    <a href="#wanted" data-i18n="nav.wanted">Se busca</a>
+    <a href="#terraza" data-i18n="nav.terraza">Terraza</a>
+    <a href="#visita" data-i18n="nav.visita">Visita</a>
+  </nav>
+  <div class="lang" data-lang-switch></div>
+  <a class="nav__call" href="tel:+34972036928"><i class="ph-bold ph-phone"></i><span>972 03 69 28</span></a>
+  <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Menú" data-i18n-attr="aria-label:nav.menu"><span></span><span></span><span></span></button>
+</header>
+<div class="drawer" id="drawer">
+  <a href="#rancho" data-i18n="nav.rancho">El rancho</a><a href="#parrillada" data-i18n="nav.parri">Parrillada</a><a href="#corte" data-i18n="nav.corte">El corte</a><a href="#carta" data-i18n="nav.carta">Carta</a><a href="#wanted" data-i18n="nav.wanted">Se busca</a><a href="#terraza" data-i18n="nav.terraza">Terraza</a><a href="#visita" data-i18n="nav.visita">Visita</a>
+  <a class="drawer__call" href="tel:+34972036928">972 03 69 28</a>
+  <div class="langs drawer__langs" data-lang-list></div>
+</div>
+
+<main>
+  <!-- ============ PORTADA ============ -->
+  <section class="hero" id="inicio">
+    <img class="hero__bg" src="assets/img/neon.jpg" alt="" aria-hidden="true">
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="hero__in">
+      <p class="hero__kicker" data-i18n="hero.kicker">Steakhouse · Est. 1999 · Passeig de s’Abanell</p>
+      <h1 class="hero__title"><span class="sr-only" data-i18n="hero.h1">Texas Ranch Steakhouse, carnes a la brasa frente al mar en Blanes</span><span aria-hidden="true" class="hero__w1">Texas</span><span aria-hidden="true" class="hero__w2">Ranch</span><span aria-hidden="true" class="hero__neon">Steakhouse</span></h1>
+      <p class="hero__lead" data-i18n="hero.lead"></p>
+      <div class="hero__row">
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><path d="M60 6l12 27 30-3-17 25 17 25-30-3-12 27-12-27-30 3 17-25-17-25 30 3z"/><circle cx="60" cy="58" r="22"/></svg>
+          <b>4,5</b>
+        </div>
+        <div class="hero__meta">
+          <p class="stars" data-i18n="hero.rating"><b>4,5</b> · 1.765 opiniones en Google</p>
+          <p class="live" data-live><span class="live__dot"></span><span data-live-text></span></p>
+        </div>
+      </div>
+      <div class="hero__ctas">
+        <a class="btn btn--orange" href="#carta"><span data-i18n="hero.ctaCarta">Ver la carta</span><i class="ph-bold ph-arrow-down"></i></a>
+        <a class="btn btn--line" href="tel:+34972036928"><i class="ph-bold ph-phone"></i><span data-i18n="hero.ctaCall">Reservar mesa</span></a>
+      </div>
+    </div>
+    <svg class="weed" viewBox="0 0 100 100" aria-hidden="true"><g fill="none" stroke="#A88452" stroke-width="2.2" stroke-linecap="round"><circle cx="50" cy="50" r="40"/><path d="M14 40c20 10 50-30 72 6M20 70c26-6 40 14 64-16M30 20c10 30 30 50 50 60M60 12c-6 30 6 56-6 76M24 54c18 0 30-20 52-18M40 86c4-20 30-36 46-36"/></g></svg>
+  </section>
+
+  <!-- ============ EL RANCHO ============ -->
+  <section class="rancho" id="rancho">
+    <div class="wrap rancho__grid">
+      <div class="rancho__txt">
+        <p class="kicker" data-i18n="ran.kicker">El rancho</p>
+        <h2 class="h2 reveal" data-i18n="ran.title"></h2>
+        <p class="lead reveal" data-i18n="ran.lead"></p>
+        <p class="reveal" data-i18n="ran.p2"></p>
+        <ul class="facts">
+          <li class="reveal"><b>1999</b><span data-i18n="ran.f1">abrió el rancho</span></li>
+          <li class="reveal"><b data-count="1765">1.765</b><span data-i18n="ran.f2">opiniones en Google · 4,5</span></li>
+          <li class="reveal"><b><i class="ph-bold ph-waves"></i></b><span data-i18n="ran.f3">la playa, al otro lado del paseo</span></li>
+        </ul>
+      </div>
+      <figure class="tv reveal">
+        <video id="ranVid" src="assets/video/parrillada.mp4" poster="assets/video/parrillada-poster.jpg" muted loop playsinline preload="metadata" aria-label="Parrillada en la mesa" data-i18n-attr="aria-label:ran.vid"></video>
+        <figcaption data-i18n="ran.vid">Parrillada en la mesa (vídeo de un cliente en Google)</figcaption>
+      </figure>
+    </div>
+    <div class="wrap decor">
+      <figure class="decor__f reveal"><img src="assets/img/salon.jpg" alt="" data-i18n-attr="alt:ran.c1" loading="lazy"><figcaption data-i18n="ran.c1">El salón</figcaption></figure>
+      <figure class="decor__f reveal"><img src="assets/img/jefe-indio.jpg" alt="" data-i18n-attr="alt:ran.c2" loading="lazy"><figcaption data-i18n="ran.c2">Jefe indio de la entrada</figcaption></figure>
+      <figure class="decor__f reveal"><img src="assets/img/pared.jpg" alt="" data-i18n-attr="alt:ran.c3" loading="lazy"><figcaption data-i18n="ran.c3">La pared del rancho</figcaption></figure>
+      <figure class="decor__f reveal"><img src="assets/img/cactus.jpg" alt="" data-i18n-attr="alt:ran.c4" loading="lazy"><figcaption data-i18n="ran.c4">«Espere aquí, por favor»</figcaption></figure>
+    </div>
+    <div class="wrap quotes">
+      <blockquote class="quote reveal"><p data-i18n="q.1"></p><cite data-i18n="q.src">Opinión en Google</cite></blockquote>
+      <blockquote class="quote reveal"><p data-i18n="q.2"></p><cite data-i18n="q.src">Opinión en Google</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- ============ LA PARRILLADA ============ -->
+  <section class="parri" id="parrillada">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="par.kicker">La parrillada · 24,95 €</p>
+        <h2 class="h2" data-i18n="par.title">Cinco carnes, <em>un plato</em></h2>
+        <p class="lead" data-i18n="par.lead"></p>
+      </div>
+      <div class="parri__grid">
+        <figure class="plate">
+          <img src="assets/img/parrillada.jpg" alt="Parrillada del Texas Ranch" width="1200" height="863" loading="lazy">
+          <div class="pins" id="pins"></div>
+          <figcaption data-i18n="par.foto">Foto de un cliente en Google</figcaption>
+        </figure>
+        <ol class="parts" id="parts"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EL CORTE ============ -->
+  <section class="corte" id="corte">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="cor.kicker">El corte</p>
+        <h2 class="h2" data-i18n="cor.title">¿De qué parte <em>sale</em>?</h2>
+        <p class="lead" data-i18n="cor.lead"></p>
+      </div>
+      <div class="corte__grid">
+        <svg class="cow" id="cow" viewBox="0 0 800 470" role="group" aria-label="Cortes de la vaca">
+          <g class="cow__back" aria-hidden="true">
+            <path d="M330 300h46l-6 100 6 38h-34l-6-38z"/>
+            <path d="M590 300h46l-4 100 4 38h-34l-6-38z"/>
+          </g>
+          <path class="cow__tail" d="M706 140c48 26 50 110 40 176" aria-hidden="true"/>
+          <path class="cow__tuft" d="M738 310c-10 14-8 30 6 36 12-8 14-24 2-38z" aria-hidden="true"/>
+          <path class="cut" data-cut="head" d="M60 152 120 118 178 120 190 152 186 212 150 250 112 252 88 232 70 200Z"/>
+          <path class="cow__horn" d="M112 121 92 84 128 114Z M160 120 168 82 178 122Z" aria-hidden="true"/>
+          <path class="cut" data-cut="neck" d="M178 120 250 104 258 248 196 262 150 250 186 212 190 152Z"/>
+          <path class="cut" data-cut="chuck" d="M250 104 360 98 362 228 258 232Z"/>
+          <path class="cut" data-cut="rib" d="M360 98 452 98 452 226 362 228Z"/>
+          <path class="cut" data-cut="short" d="M452 98 532 100 532 198 452 198Z"/>
+          <path class="cut" data-cut="sirloin" d="M532 100 612 104 614 196 532 198Z"/>
+          <path class="cut" data-cut="tender" d="M452 198 614 196 612 226 452 226Z"/>
+          <path class="cut" data-cut="round" d="M612 104 666 108 702 140 712 212 698 298 636 304 612 226Z"/>
+          <path class="cut" data-cut="brisket" d="M258 232 362 228 362 302 300 306 262 286Z"/>
+          <path class="cut" data-cut="plate" d="M362 228 452 226 462 300 362 302Z"/>
+          <path class="cut" data-cut="flank" d="M452 226 612 226 636 304 560 300 462 300Z"/>
+          <path class="cut" data-cut="shank" d="M288 300 354 302 348 400 342 440 306 440 300 400Z"/>
+          <path class="cut" data-cut="shank" d="M624 302 692 300 686 400 680 440 646 440 640 400Z"/>
+          <g class="cow__labels" aria-hidden="true">
+            <text x="122" y="192">HEAD</text><text x="218" y="196" transform="rotate(-80 218 196)">NECK</text><text x="306" y="170">CHUCK</text>
+            <text x="406" y="174" class="big">RIB</text><text x="492" y="146" class="sm">SHORT</text><text x="492" y="162" class="sm">LOIN</text><text x="572" y="154" class="sm">SIRLOIN</text>
+            <text x="532" y="216" class="xs">TENDERLOIN</text><text x="664" y="210">ROUND</text><text x="310" y="272">BRISKET</text><text x="410" y="270">PLATE</text><text x="544" y="270">FLANK</text>
+            <text x="324" y="370" class="sm">SHANK</text><text x="664" y="370" class="sm">SHANK</text>
+          </g>
+        </svg>
+        <div class="cutcard" id="cutcard" aria-live="polite">
+          <p class="cutcard__k" data-i18n="cor.pick">Toca un corte</p>
+          <p class="cutcard__t" id="cutT">—</p>
+          <p class="cutcard__d" id="cutD"></p>
+          <p class="cutcard__p" id="cutP"></p>
+          <p class="cutcard__more" data-i18n="cor.more"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARTA ============ -->
+  <section class="carta" id="carta">
+    <div class="wrap">
+      <div class="sec-head sec-head--light">
+        <p class="kicker" data-i18n="car.kicker">La carta</p>
+        <h2 class="h2" data-i18n="car.title">La pizarra del <em>rancho</em></h2>
+        <p class="lead" data-i18n="car.lead"></p>
+      </div>
+      <div class="board">
+        <div class="board__tabs" id="tabs" role="tablist"></div>
+        <div class="board__size" id="sizeBox" hidden>
+          <span data-i18n="car.burgerSize">Tamaño de la hamburguesa</span>
+          <div class="seg" role="radiogroup" aria-label="Tamaño de la hamburguesa" data-i18n-attr="aria-label:car.burgerSize">
+            <button type="button" role="radio" data-size="1" aria-checked="true"><svg viewBox="0 0 40 24" aria-hidden="true"><path d="M4 12c0-6 7-9 16-9s16 3 16 9z"/><rect x="5" y="13" width="30" height="5" rx="2"/><path d="M5 20h30l-2 3H7z"/></svg><span data-i18n="car.single">Simple</span></button>
+            <button type="button" role="radio" data-size="2" aria-checked="false"><svg viewBox="0 0 40 24" aria-hidden="true"><path d="M4 9c0-5 7-8 16-8s16 3 16 8z"/><rect x="5" y="10" width="30" height="4" rx="2"/><rect x="5" y="15" width="30" height="4" rx="2"/><path d="M5 20h30l-2 3H7z"/></svg><span data-i18n="car.double">Doble</span></button>
+          </div>
+        </div>
+        <div class="board__body" id="board"></div>
+        <p class="board__note" data-i18n="car.note"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SE BUSCA ============ -->
+  <section class="wanted" id="wanted">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker" data-i18n="wan.kicker">Se busca</p>
+        <h2 class="h2" data-i18n="wan.title">Wanted: <em>vivos o a la brasa</em></h2>
+        <p class="lead" data-i18n="wan.lead"></p>
+      </div>
+      <div class="posters" id="posters"></div>
+    </div>
+  </section>
+
+  <!-- ============ LA TERRAZA ============ -->
+  <section class="terraza" id="terraza">
+    <div class="sky" id="sky">
+      <img class="sky__img" src="assets/img/terraza-noche.jpg" alt="La terraza del Texas Ranch de noche, frente a la playa" loading="lazy">
+      <canvas class="sky__cv" id="skyCv" aria-hidden="true"></canvas>
+      <p class="sky__tap"><i class="ph-bold ph-sparkle"></i><span data-i18n="ter.tap">Toca el cielo para lanzar un cohete</span></p>
+    </div>
+    <div class="wrap terraza__txt">
+      <p class="kicker" data-i18n="ter.kicker">La terraza</p>
+      <h2 class="h2" data-i18n="ter.title">Cenar con la playa <em>delante</em></h2>
+      <p class="lead" data-i18n="ter.lead"></p>
+      <figure class="terraza__inset"><img src="assets/img/focs.jpg" alt="" data-i18n-attr="alt:ter.cap" loading="lazy"><figcaption data-i18n="ter.cap"></figcaption></figure>
+    </div>
+  </section>
+
+  <!-- ============ VISITA ============ -->
+  <section class="visita" id="visita">
+    <div class="wrap visita__grid">
+      <div>
+        <p class="kicker" data-i18n="vis.kicker">Visita</p>
+        <h2 class="h2" data-i18n="vis.title">Te esperamos en el <em>rancho</em></h2>
+        <p class="visita__addr" data-i18n="vis.addr">Passeig de s’Abanell, 2<br>17300 Blanes (Girona)</p>
+        <p class="live live--dark" data-live><span class="live__dot"></span><span data-live-text></span></p>
+        <ul class="visita__notes">
+          <li><i class="ph-bold ph-receipt"></i><span data-i18n="vis.bill"></span></li>
+          <li><i class="ph-bold ph-beer-stein"></i><span data-i18n="vis.shack"></span></li>
+        </ul>
+        <div class="hero__ctas">
+          <a class="btn btn--orange" href="https://maps.google.com/?cid=6484450480911301146" target="_blank" rel="noopener"><i class="ph-bold ph-navigation-arrow"></i><span data-i18n="vis.maps">Abrir en Google Maps</span></a>
+          <a class="btn btn--dark" href="tel:+34972036928"><i class="ph-bold ph-phone"></i><span data-i18n="vis.call">Llamar</span></a>
+        </div>
+      </div>
+      <div class="hours">
+        <p class="hours__h" data-i18n="vis.hours">Horario</p>
+        <ul class="hours__list" id="hoursList"></ul>
+        <p class="hours__note" data-i18n="vis.season"></p>
+        <a class="hours__tel" href="tel:+34972036928">972 03 69 28</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="foot__big" aria-hidden="true">Texas Ranch</p>
+  <div class="foot__row">
+    <span>Texas Ranch Steakhouse · Est. 1999 · Passeig de s’Abanell, 2 · 17300 Blanes · <a href="tel:+34972036928">972 03 69 28</a> · <a href="https://www.facebook.com/texasranchsteakhouse/" target="_blank" rel="noopener">Facebook</a></span>
+    <span data-i18n="foot.photos">Fotos y vídeo: clientes del Texas Ranch en Google Maps. Carta: mantel del local.</span>
+    <div class="langs foot__langs" data-lang-list></div>
+  </div>
+</footer>
+
+<div class="lb" id="lb" hidden>
+  <button class="lb__x" type="button" id="lbX" aria-label="Cerrar" data-i18n-attr="aria-label:lb.close"><i class="ph-bold ph-x"></i></button>
+  <figure class="lb__fig"><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="carta.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
